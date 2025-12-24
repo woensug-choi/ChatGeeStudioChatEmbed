@@ -3,7 +3,7 @@ import { Bot, BotProps } from '@/components/Bot';
 import { BubbleParams } from '@/features/bubble/types';
 import { createSignal, onCleanup, onMount, Show } from 'solid-js';
 
-const defaultButtonColor = '#3B81F6';
+const defaultButtonColor = '#df51b8';
 const defaultIconColor = 'white';
 
 export type FullProps = BotProps & BubbleParams;

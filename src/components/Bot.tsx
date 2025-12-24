@@ -266,7 +266,7 @@ const defaultWelcomeMessage = 'Hi there! How can I help?';
 
 const defaultBackgroundColor = '#ffffff';
 const defaultTextColor = '#303235';
-const defaultTitleBackgroundColor = '#3B81F6';
+const defaultTitleBackgroundColor = '#df51b8';
 
 /* FeedbackDialog component - for collecting user feedback */
 const FeedbackDialog = (props: {
@@ -441,7 +441,7 @@ const FormInputView = (props: {
                 type="submit"
                 class="w-full py-2 px-4 text-white font-semibold rounded-md focus:outline-none transition duration-300 ease-in-out"
                 style={{
-                  'background-color': props.sendButtonColor || '#3B81F6',
+                  'background-color': props.sendButtonColor || '#df51b8',
                 }}
               >
                 Submit
