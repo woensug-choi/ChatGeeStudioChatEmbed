@@ -29,9 +29,9 @@ const defaultFontSize = 16;
 const phoneRegex = new RegExp(/^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/);
 
 const LeadCaptureSchema = z.object({
-  name: z.string().min(2, 'Name is too short').optional(),
-  email: z.string().email('Please provide a valid email').optional(),
-  phone: z.string().min(5, 'Phone number is too short').regex(phoneRegex, 'Invalid Number!').optional(),
+  name: z.string().min(2, '이름이 너무 짧습니다.').optional(),
+  email: z.string().email('올바른 이메일 주소를 입력해주세요.').optional(),
+  phone: z.string().min(5, '전화번호가 올바르지 않습니다').regex(phoneRegex, '번호를 확인해주세요!').optional(),
 });
 
 export const LeadCaptureBubble = (props: Props) => {
@@ -111,7 +111,7 @@ export const LeadCaptureBubble = (props: Props) => {
                   <div class={'w-full flex items-center justify-between chatbot-input border border-[#eeeeee]'}>
                     <input
                       class="focus:outline-none bg-transparent px-4 py-4 flex-1 w-full h-full min-h-[56px] max-h-[128px] text-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100 "
-                      placeholder="Name"
+                      placeholder="이름"
                       name="name"
                       style={{ width: '100%' }}
                       value={leadName()}
@@ -127,7 +127,7 @@ export const LeadCaptureBubble = (props: Props) => {
                     <input
                       class="focus:outline-none bg-transparent px-4 py-4 flex-1 w-full h-full min-h-[56px] max-h-[128px] text-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100 "
                       type="email"
-                      placeholder="Email Address"
+                      placeholder="이메일 주소"
                       name="email"
                       style={{ width: '100%' }}
                       value={leadEmail()}
@@ -143,7 +143,7 @@ export const LeadCaptureBubble = (props: Props) => {
                     <input
                       class="focus:outline-none bg-transparent px-4 py-4 flex-1 w-full h-full min-h-[56px] max-h-[128px] text-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100 "
                       type="number"
-                      placeholder="Phone Number"
+                      placeholder="전화번호"
                       name="phone"
                       style={{ width: '100%' }}
                       value={leadPhone()}

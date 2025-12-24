@@ -183,7 +183,7 @@ You can also customize chatbot with different configuration
           avatarSrc: 'https://raw.githubusercontent.com/zahidkhawaja/langchain-chat-nextjs/main/public/usericon.png',
         },
         textInput: {
-          placeholder: 'Type your question',
+          placeholder: '질문을 입력하세요',
           backgroundColor: '#ffffff',
           textColor: '#303235',
           sendButtonColor: '#df51b8',

@@ -22,7 +22,7 @@ export const CancelLeadCaptureButton = (props: LeadCaptureButtonProps) => {
       style={{ background: 'transparent', border: 'none', color: props.buttonColor }}
       title="Cancel Lead Capture"
     >
-      Cancel
+      취소
     </button>
   );
 };
@@ -31,7 +31,7 @@ const SaveLeadFallback = () => {
   return (
     <span class="flex items-center gap-2">
       <Spinner class="text-white" />
-      Saving...
+      저장 중...
     </span>
   );
 };
@@ -46,7 +46,7 @@ export const SaveLeadButton = (props: LeadCaptureButtonProps) => {
       {...props}
     >
       <Show when={!props.isLoading} fallback={<SaveLeadFallback />}>
-        <span style={{ 'font-family': 'Poppins, sans-serif' }}>Submit</span>
+        <span style={{ 'font-family': 'Poppins, sans-serif' }}>전송</span>
       </Show>
     </SendButton>
   );
